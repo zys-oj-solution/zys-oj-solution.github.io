@@ -189,12 +189,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     }
     cout &lt;&lt; max_level + <span class="pl-c1">1</span> &lt;&lt; endl;
     <span class="pl-k">return</span> <span class="pl-c1">0</span>;
-}</pre></div>
-<p>/*<br>
-初始化最长路径长度为 0。 (因为我们不知道哪个车站的路径最长，需要从头开始比较每一个 dist[i]，而且也是因为我们所有的 dist[i] 都 &gt;= 0。)<br>
-遍历所有车站，更新最长路径长度。<br>
-输出其+1的结果，完结撒花！(因为拓扑排序中求出的最长路径长度表示该节点在整个等级链中所处的位置（从 0 开始），因此要加1才能得到它的实际等级(即最少划分的等级数)。<br>
-*/</p>
+}
+<span class="pl-c"><span class="pl-c">/*</span></span>
+<span class="pl-c">初始化最长路径长度为 0。 (因为我们不知道哪个车站的路径最长，需要从头开始比较每一个 dist[i]，而且也是因为我们所有的 dist[i] 都 &gt;= 0。)</span>
+<span class="pl-c">遍历所有车站，更新最长路径长度。</span>
+<span class="pl-c">输出其+1的结果，完结撒花！(因为拓扑排序中求出的最长路径长度表示该节点在整个等级链中所处的位置（从 0 开始），因此要加1才能得到它的实际等级(即最少划分的等级数)。</span>
+<span class="pl-c"><span class="pl-c">*/</span></span></pre></div>
 <h2>需要注意的点</h2>
 <ol>
 <li><strong>边去重</strong>：使用 <code class="notranslate">has_edge[y][x]</code> 避免重复添加相同边，降低时空复杂度。</li>
